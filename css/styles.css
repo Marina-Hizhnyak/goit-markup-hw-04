@@ -16,6 +16,7 @@
   --bg-grey-color: #f5f4fa;
   --bg-white-color: #ffffff;
   --overlay-color: rgba(47, 48, 58, 0.4);
+  --background-color: #afb1b8;
 }
 
 body {
@@ -107,6 +108,10 @@ img {
 .contacts-nav-list {
   margin-left: auto;
   padding: 0;
+}
+.icon-nav:hover,
+.icon-nav:focus {
+  color: var(--accent-text-color);
 }
 .site-nav-list {
   margin-left: 93px;
@@ -303,7 +308,7 @@ ul {
   margin-left: 30px;
   margin-top: 30px;
   text-align: center;
-  background-color: var(--primary-bg-color);
+  background-color: var(--bg-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -526,4 +531,42 @@ ul {
   fill: currentColor;
   margin-right: 10px;
   color: var(--primary-text-color);
+}
+.clients-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.client-item {
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  color: var(--primary-text-color);
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
+}
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+.link-contacts:hover,
+.link-contacts:focus {
+  color: var(--accent-text-color);
 }
