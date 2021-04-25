@@ -215,7 +215,7 @@ ul {
       var(--overlay-color),
       var(--overlay-color)
     ),
-    url(../images/Img.jpg);
+    url(./images/Img.jpg);
 }
 
 .section-title {
